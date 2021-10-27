@@ -10,8 +10,9 @@
     "typescript": "^4.4.4"
   },
   "scripts": {
-    "start": "parcel ./index.html",
-    "build": "parcel build ./index.html --out-dir dist"
+    "start-frontend": "parcel ./index.html",
+    "build-frontend": "parcel build ./index.html --out-dir dist",
+    "start": "node app.js"
   },
   "dependencies": {
     "axios": "^0.24.0",
