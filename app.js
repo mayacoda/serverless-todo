@@ -27,22 +27,26 @@ app.use(cors({credentials: true, origin: true}))
 
 
 app.get('/', async (req, res) => {
+  console.log('got GET request')
   let allTodos = await getAllTodos()
   res.send(allTodos)
 })
 
 app.post('/', async (req, res) => {
+  console.log('got POST request', req.body)
   const id = await addTodo(req.body)
   await updateTodo(id, { id })
   res.send({ id })
 })
 
 app.delete('/:todoId', async (req, res) => {
+  console.log('got DELETE request', req.params.todoId)
   await deleteTodo(req.params.todoId)
   res.send('OK')
 })
 
 app.put('/:todoId', async (req, res) => {
+  console.log('got PUT request', req.params.todoId, req.body)
   await updateTodo(req.params.todoId, req.body)
   res.send('OK')
 })
