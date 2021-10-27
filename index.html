@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Osnove veb programiranja - Vežba 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="src/styles.css"
+  />
+</head>
+
+<body>
+<div class="container">
+  <form class="new-task-container">
+    <label for="new-task">Dodaj stavku</label>
+    <div>
+      <input id="new-task" type="text" />
+      <button id="add-button">Dodaj</button>
+    </div>
+  </form>
+
+  <h3>Todo lista</h3>
+  <ul id="incomplete-tasks">
+    <li>
+      <input type="checkbox" />
+      <label>Plati račune</label>
+      <input type="text" />
+      <button class="edit">Izmeni</button>
+      <button class="delete">Obriši</button>
+    </li>
+    <li class="editMode">
+      <input type="checkbox" />
+      <label>Idi u prodavnicu</label>
+      <input type="text" value="Idi u prodavnicu" />
+      <button class="edit">Izmeni</button>
+      <button class="delete">Obriši</button>
+    </li>
+  </ul>
+
+  <h3>Završene</h3>
+  <ul id="completed-tasks">
+    <li>
+      <input type="checkbox" checked />
+      <label>Lekarski pregled</label>
+      <input type="text" />
+      <button class="edit">Izmeni</button>
+      <button class="delete">Obriši</button>
+    </li>
+  </ul>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>

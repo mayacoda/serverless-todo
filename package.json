@@ -1,0 +1,16 @@
+{
+  "name": "serverless-todo",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "repository": "https://github.com/mayacoda/serverless-todo.git",
+  "author": "Maya Nedeljkovich <maya.nedeljko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "1.12.5",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "start": "parcel ./index.html",
+    "build": "build ./index.html --out-dir dist"
+  }
+}
