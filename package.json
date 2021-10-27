@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start-frontend": "parcel ./index.html",
-    "build-frontend": "parcel build ./index.html --out-dir dist",
+    "build": "parcel build ./index.html --out-dir dist",
     "start": "node app.js"
   },
   "dependencies": {
