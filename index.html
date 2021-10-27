@@ -14,7 +14,10 @@
 </head>
 
 <body>
-<div class="container">
+<div id='loading'>
+  Učitavanje...
+</div>
+<div class="container" id='tasks'>
   <form class="new-task-container">
     <label for="new-task">Dodaj stavku</label>
     <div>
@@ -25,31 +28,10 @@
 
   <h3>Todo lista</h3>
   <ul id="incomplete-tasks">
-    <li>
-      <input type="checkbox" />
-      <label>Plati račune</label>
-      <input type="text" />
-      <button class="edit">Izmeni</button>
-      <button class="delete">Obriši</button>
-    </li>
-    <li class="editMode">
-      <input type="checkbox" />
-      <label>Idi u prodavnicu</label>
-      <input type="text" value="Idi u prodavnicu" />
-      <button class="edit">Izmeni</button>
-      <button class="delete">Obriši</button>
-    </li>
   </ul>
 
   <h3>Završene</h3>
   <ul id="completed-tasks">
-    <li>
-      <input type="checkbox" checked />
-      <label>Lekarski pregled</label>
-      <input type="text" />
-      <button class="edit">Izmeni</button>
-      <button class="delete">Obriši</button>
-    </li>
   </ul>
 </div>
 <script src="index.ts"></script>
