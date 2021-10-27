@@ -7,7 +7,7 @@ const addButton = document.querySelector('#add-button'); // dugme za dodavanje n
 const incompleteTaskHolder = document.querySelector('#incomplete-tasks'); // lista stavki koje treba da se urade
 const completedTasksHolder = document.querySelector('#completed-tasks'); // lista gotovih stavki
 
-const url = 'https://serverless-todo.herokuapp.com/';
+const url = 'https://serverless-todo.herokuapp.com';
 
 
 function init() {
