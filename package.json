@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "parcel ./index.html",
-    "build": "build ./index.html --out-dir dist"
+    "build": "parcel build ./index.html --out-dir dist"
   }
 }
